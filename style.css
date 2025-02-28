@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  background: rgb(226, 137, 137);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* it will make them at the same line*/
+  width: 80%;
+  margin: 0 auto;
+}
+.logo {
+  width: 40px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  /* display:inline-block will remove list style  */
+  list-style: none;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 100px auto;
+}
+.content .text {
+  width: 40%; /* to specify the width of the text*/
+  color: white;
+}
+.content .text h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  /* margin: 20px 0; */
+}
+.content .text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.content .text a {
+  background: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.content .image {
+  width: 30%;
+}
+.content .image img {
+  width: 180px;
+}
+.icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icons img {
+  width: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icons img:hover {
+  transform: scale(1.2);
+}
